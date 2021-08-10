@@ -3,5 +3,6 @@
  * */
 public class ArvoreBinaria {
 
+	Node raiz;
 	
 }
