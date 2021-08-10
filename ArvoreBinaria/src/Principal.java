@@ -4,11 +4,10 @@ public class Principal {
 	public static void main(String[] args) {
 		Principal p = new Principal();
 		
-
 	}
 	
 	public Principal() {
-		ArvoreBinaria arvoreBinaria = new ArvoreBinaria();
+		/*ArvoreBinaria arvoreBinaria = new ArvoreBinaria();
 		arvoreBinaria.raiz = new Node();
 		arvoreBinaria.raiz.info = 9;
 		
@@ -20,7 +19,18 @@ public class Principal {
 		arvoreBinaria.raiz.dir = new Node();
 		arvoreBinaria.raiz.dir.info = 13;
 		arvoreBinaria.raiz.dir.esq = null;
-		arvoreBinaria.raiz.dir.dir = null;
+		arvoreBinaria.raiz.dir.dir = null;*/
+		
+		ArvoreBinaria arvoreBinaria = new ArvoreBinaria();
+		arvoreBinaria.raiz = new Node();
+		arvoreBinaria.raiz.info = 9;
+		
+		arvoreBinaria.inserirOrdenado(arvoreBinaria.raiz, 13);
+		arvoreBinaria.inserirOrdenado(arvoreBinaria.raiz, 5);
+		arvoreBinaria.inserirOrdenado(arvoreBinaria.raiz, 4);
+		arvoreBinaria.inserirOrdenado(arvoreBinaria.raiz, 8);
+		arvoreBinaria.inserirOrdenado(arvoreBinaria.raiz, 11);
+		arvoreBinaria.inserirOrdenado(arvoreBinaria.raiz, 16);
 
 		preOrdem(arvoreBinaria.raiz);
 		System.out.println();
