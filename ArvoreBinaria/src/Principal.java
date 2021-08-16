@@ -22,8 +22,7 @@ public class Principal {
 		arvoreBinaria.raiz.dir.dir = null;*/
 		
 		ArvoreBinaria arvoreBinaria = new ArvoreBinaria();
-		arvoreBinaria.raiz = new Node();
-		arvoreBinaria.raiz.info = 9;
+		arvoreBinaria.raiz = new Node(9);
 		
 		arvoreBinaria.inserirOrdenado(arvoreBinaria.raiz, 13);
 		arvoreBinaria.inserirOrdenado(arvoreBinaria.raiz, 5);
@@ -31,12 +30,17 @@ public class Principal {
 		arvoreBinaria.inserirOrdenado(arvoreBinaria.raiz, 8);
 		arvoreBinaria.inserirOrdenado(arvoreBinaria.raiz, 11);
 		arvoreBinaria.inserirOrdenado(arvoreBinaria.raiz, 16);
+		
+		Node node = arvoreBinaria.buscaBinaria(arvoreBinaria.raiz, 11);
+		System.out.println(node.info);
+		
+		System.out.println(arvoreBinaria.buscaBinaria(arvoreBinaria.raiz.info, 16));
 
-		preOrdem(arvoreBinaria.raiz);
-		System.out.println();
-		emOrdem(arvoreBinaria.raiz);
-		System.out.println();
-		posOrdem(arvoreBinaria.raiz);
+//		preOrdem(arvoreBinaria.raiz);
+//		System.out.println();
+//		emOrdem(arvoreBinaria.raiz);
+//		System.out.println();
+//		posOrdem(arvoreBinaria.raiz);
 	}
 	
 	public void preOrdem(Node raiz) {

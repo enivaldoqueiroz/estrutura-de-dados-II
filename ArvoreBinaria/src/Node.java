@@ -7,4 +7,15 @@ public class Node {
 	Node esq; //Esquerda
 	Node dir; //Direita
 	
+	public Node() {
+		esq = null;
+		dir = null;
+	}
+	
+	public Node(int v) {
+		info = v;
+		esq = null;
+		dir = null;
+	}
+	
 }
