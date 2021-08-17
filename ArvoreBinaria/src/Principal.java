@@ -31,11 +31,14 @@ public class Principal {
 		arvoreBinaria.inserirOrdenado(arvoreBinaria.raiz, 11);
 		arvoreBinaria.inserirOrdenado(arvoreBinaria.raiz, 16);
 		
-		Node node = arvoreBinaria.buscaBinaria(arvoreBinaria.raiz, 11);
-		System.out.println(node.info);
+//		Node node = arvoreBinaria.buscaBinaria(arvoreBinaria.raiz, 11);
+//		if(node != null)System.out.println(node.info);
+//		else System.out.println("Valor não encontrado");
 		
-		System.out.println(arvoreBinaria.buscaBinaria(arvoreBinaria.raiz.info, 16));
-
+		Node min = arvoreBinaria.minimo(arvoreBinaria.raiz);
+		System.out.println(min.info);
+		
+		
 //		preOrdem(arvoreBinaria.raiz);
 //		System.out.println();
 //		emOrdem(arvoreBinaria.raiz);

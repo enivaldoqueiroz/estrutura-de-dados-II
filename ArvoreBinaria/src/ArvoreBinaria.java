@@ -18,6 +18,23 @@ public class ArvoreBinaria {
 		}
 	}
 	
+	Node minimo(Node raiz) {
+		if(raiz.esq != null) {
+			return minimo(raiz.esq);
+		}
+		else {
+			return raiz;
+		}
+		
+	}
+	
+	Node sucessor(Node raiz) {
+		if(raiz.dir != null) {
+			return minimo(raiz.dir);
+		}
+		return null;
+	}
+	
 	public void inserirOrdenado(Node raiz, int valor) {
 		if (valor > raiz.info) {
 			//Inserir o valor a direita da raiz
