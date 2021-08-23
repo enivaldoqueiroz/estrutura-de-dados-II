@@ -1,2 +1,2 @@
-# Estrutura de dados II
+# Disciplina Estrutura de dados II
 
