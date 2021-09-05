@@ -18,6 +18,27 @@ public class ArvoreBinaria {
 		}
 	}
 	
+	void remover(Node raiz, int valor) {
+		//Buscar o pai do node cujo valor estou procurando
+		if(raiz.info == valor) {
+			//1. Essa raiz não tem filhos
+			
+			//2. Essa raiz tem um filho
+			
+			//3. Essa raiz tem dois filhos
+		}
+		else {
+			
+		}
+	}
+	
+	Node sucessor(Node raiz) {
+		if(raiz.dir != null) {
+			return minimo(raiz.dir);
+		}
+		return null;
+	}
+	
 	Node minimo(Node raiz) {
 		if(raiz.esq != null) {
 			return minimo(raiz.esq);
@@ -26,13 +47,6 @@ public class ArvoreBinaria {
 			return raiz;
 		}
 		
-	}
-	
-	Node sucessor(Node raiz) {
-		if(raiz.dir != null) {
-			return minimo(raiz.dir);
-		}
-		return null;
 	}
 	
 	public void inserirOrdenado(Node raiz, int valor) {
